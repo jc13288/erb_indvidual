@@ -1,0 +1,39 @@
+
+
+let currentDiscourse = null;
+
+function speakContent() {
+    // 如果有正在朗讀的內容，則先停止
+    if (currentDiscourse) {
+        window.speechSynthesis.cancel();
+    }
+
+    // 如果有正在朗讀的內容，則先停止
+    let synth = window.speechSynthesis;
+
+    // 獲取網頁內容
+    let content = document.body.innerText;
+
+    // 創建一個 SpeechSynthesisUtterance 對象
+    currentDiscourse = new SpeechSynthesisUtterance(content);
+
+    // 設置語音屬性（可選）
+    currentDiscourse.lang = 'zh-hk';
+
+    // 播放聲音
+    synth.speak(currentDiscourse);
+
+    // 監聽頁面卸載事件
+    window.addEventListener('beforeunload', stopSpeech);
+}
+
+function stopSpeech() {
+    if (currentDiscourse) {
+        window.speechSynthesis.cancel(); // 取消所有正在朗读的内容
+    }
+}
+
+// 清理事件監聽器以避免內存泄漏
+window.addEventListener('unload', function() {
+    window.removeEventListener('beforeunload', stopSpeech);
+});

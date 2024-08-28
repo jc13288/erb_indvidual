@@ -1,0 +1,418 @@
+*{
+    margin: 0px;
+    padding:0px;
+    /* box-sizing: border-box; */
+    box-sizing: border-box;
+   /* border: 1px solid red;   */
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1; */
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background: var(--clr-white);
+    color:var(--clr-grey-1); */
+    line-height: 1.5;
+    font-size: 0.875rem;
+  }
+
+.header {
+display: flex;
+justify-content:center;
+align-items: center;
+/* background-color: #333; */
+/* color: #fff; */
+background-color: #f4f4f4;
+    background-image: url('../image/bidge.png');
+    background-repeat: repeat;
+    color: #333;
+    /* padding: 10px 20px; */
+}
+
+.headers{
+    max-width: 150px;
+    margin-right: 10px;
+}
+
+.headers img{
+    height: 150px;
+    width: 150px;
+    /* margin-left: 10px; */
+}
+
+.header .h1{
+    margin-left: 10px;
+    width: 400px;
+}
+
+h1{
+    color: #05e933;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+ a:hover{
+    color: coral;
+    text-decoration: underline;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+p{
+    margin: 20px;
+}
+
+.header {
+    padding: 30px;
+    padding-top: 10px;
+}
+
+.main-menu{
+    display : flex;
+    justify-content:space-around;
+    gap: 60px;
+    padding: 12px ;
+    background-color: #f4f4f4;
+}
+
+.main-menu  li{
+    margin-top: 20px;
+}
+
+
+.main-menu:hover{
+    background-color: gold;
+}
+
+.main-menu a{
+    font-size: 20px;
+}
+
+.main-menu a:hover{
+    background-color: gold;
+}
+
+.main {
+    display: flex;
+    gap: 70px;
+    padding: 40px;
+}
+
+.main .imgs{
+    max-width: 800%;
+}
+
+.main img{
+    width: 100%;
+    transition: transform .4s ease 0s;
+}
+
+.main img:hover{
+    transform: scale(1.1);
+}
+
+.section{
+    /* display: flex; */
+    display: block;
+    /* flex-direction: column; */
+    justify-content:space-between;
+    gap: 30px;
+    flex-wrap: wrap; 
+    margin: 20px auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 600px;
+    height: 600px;
+    overflow-y: auto;
+}
+
+.birdNest{
+    width: 630px;
+    height: 590px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis :0;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.birdNest:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20);
+  }
+
+  .video{
+    width: 410px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+
+.pic {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-image: url('../image/bidgeBg.png');
+    background-repeat: repeat;
+    padding-top: 20px;
+}
+
+.pic .imgs{
+    width: 410px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    transition: transform .4s ease 0s;
+}
+
+.main .section{
+    flex: 1;
+    line-height: 2;
+}
+
+.main aside{
+    width: 330px;
+
+}
+
+.main aside ul:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.20);
+}
+
+.main aside .parents{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightpink; 
+}
+
+.main aside h2{
+    background-color: coral;
+    padding: 10px;
+    color:white;
+    margin-bottom: 0px;
+    line-height: 2;
+}
+
+.main aside li{
+    padding:10px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #b1adad;
+    line-height: 2;
+    
+}
+
+.nav .main-menu li{
+    padding-left: 0;;
+    padding-top: 5px;
+}
+
+footer{
+    padding: 1px;
+    text-align: center;
+    background-color: #f4f4f4;
+    font-size: 18px;
+    /* background-image: url('../image/bidgeBg.png');
+    background-repeat: repeat; */
+    align-items: center;
+} 
+
+.main-menu .button {
+    background-color: #a71a0d;
+    /*绿色*/border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s linear;
+    border-radius: 8px;
+}
+
+.main-menu .button:hover{
+    color:#333;
+    background-color: #ffe2df; /* 绿色 */
+}
+
+
+@media(max-width: 768px){
+
+    .header{
+        padding:20px;
+    }
+
+    .header h1{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .main-menu{
+        flex-direction: column;
+        text-align:center;
+    }
+
+    .main-menu li.first-list-item{
+        line-height: 3;
+    }
+
+    .main-menu li{
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 7px;
+    }
+
+    .main-menu li.last-list-item{
+        border: none;
+    }
+
+
+    .main {
+        flex-direction: column-reverse;
+    }
+
+
+    .section {
+       /* display:flex; */
+       width:100%;
+       text-align: center;
+       margin: 0 auto; /* 横向居中对齐 */
+        box-sizing: border-box; /*确保 padding 不影响总宽度 */
+        
+    }
+ 
+    .birdNest {
+        /* display:flex; */
+        width: 100%; /* 使用百分比宽度以适应容器 */
+        height: 200%; /* 调整高度以适应容器的总高度 */
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
+        background-color: #f4f4f4;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .pic .imgs{
+        width: 90%; /* 使用百分比宽度以适应容器 */
+        height: 140%; /* 调整高度以适应容器的总高度 */
+    }
+
+    .video{
+        width: 90%; /* 使用百分比宽度以适应容器 */
+        height: 140%; /* 调整高度以适应容器的总高度 */
+    }
+
+    .main aside{
+        width: 100%;
+    }
+
+    /*  */
+    .nav .main-menu{
+        display : flex;
+        gap: 70px;
+        padding: 10px;
+        background-color: lightgray;
+    }
+    
+    .nav .main-menu:hover{
+        background-color: lightblue;
+    }
+    
+    
+    .nav .main-menu a{
+        font-size: 20px;
+    }
+    
+    .nav .main-menu a:hover{
+        background-color: lightblue;
+    }
+
+    .nav .main-menu .footers{
+        max-width: 20px;
+        margin-right: 10px;
+    }
+    
+    /* TODO */
+  
+
+    .nav .main-menu{
+        display : flex;
+        gap: 70px;
+        padding: 10px;
+        background-color: rgba(246, 246, 246, 0.9);
+    }    
+    .nav .main-menu:hover{
+        background-color: coral;
+    }    
+    .nav .main-menu a{
+        font-size: 20px;
+    }   
+    .nav .main-menu a:hover{
+        background-color: lightblue;
+    }
+
+     .footer{
+       align-items: center; 
+     }
+    
+    footer .footer p{
+        font-size: 14px;
+        
+    }
+}
+
+@media(min-width: 769px) and (max-width: 2400px){
+
+    section {
+        width: 100px;
+        height: 100px;
+        margin: 0px 20px;
+        perspective: 10000px;
+    }
+    
+
+        /* ToDo  */
+        footers{
+            max-width: 20px;
+            margin-right: 20px;
+        }
+
+        .nav .main-menu{
+            display : flex;
+            gap: 70px;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        .nav .main-menu:hover{
+            background-color: coral;
+        }
+        .nav .main-menu a{
+            font-size: 20px;
+        }
+        .nav .main-menu a:hover{
+            background-color: blue;
+        }
+}
